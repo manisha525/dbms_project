@@ -10,21 +10,21 @@ The project is part of an assignment to showcase the handling of SQL transaction
 2. Transaction 5: We add a product (p100, cd, 5) in Product and (p100, d2, 50) in Stock.
 
 3. ACID Property Demonstration:
-a) Atomicity: Ensures all operations within a transaction are executed or none at all.
-b) Consistency: Maintains database integrity by adhering to constraints and rules.
-c) Isolation: Uses the SERIALIZABLE isolation level to ensure no interference from concurrent transactions.
-d) Durability: Ensures changes persist once the transaction commits.
+- Atomicity: Ensures all operations within a transaction are executed or none at all.
+- Consistency: Maintains database integrity by adhering to constraints and rules.
+- Isolation: Uses the SERIALIZABLE isolation level to ensure no interference from concurrent transactions.
+- Durability: Ensures changes persist once the transaction commits.
 
 4. Error Handling:
 - Rollbacks changes in case of errors like primary key violations or constraint breaches.
 - Ensures the database remains consistent even when exceptions occur.
 
 **Technologies Used**
-Database: PostgreSQL
-Programming Language: Python
-Python Libraries:
-psycopg2: For interacting with PostgreSQL.
-tabulate: For displaying table data in a structured format.
+- Database: PostgreSQL
+- Programming Language: Python
+- Python Libraries:
+  - psycopg2: For interacting with PostgreSQL.
+  - tabulate: For displaying table data in a structured format.
 
 **How to Run**
 Clone this repository and navigate to the project directory.
