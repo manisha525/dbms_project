@@ -1,6 +1,6 @@
 # dbms_project
 
-**Overview**
+**About the Project :**
 This project demonstrates the implementation of database transactions in PostgreSQL while ensuring compliance with the ACID properties (Atomicity, Consistency, Isolation, and Durability). It uses Python with the psycopg2 library to perform transactions that manage product and depot information in a database.
 The project is part of an assignment to showcase the handling of SQL transactions with real-world constraints like referential integrity, error handling, and cascading updates.
 
