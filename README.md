@@ -27,6 +27,6 @@ The project is part of an assignment to showcase the handling of SQL transaction
   - tabulate: For displaying table data in a structured format.
 
 **How to Run**
-Clone this repository and navigate to the project directory.
-Run the command in your Python Terminal:
-python transaction.py
+- Clone this repository and navigate to the project directory.
+- Run the command in your Python Terminal:
+  - python transaction.py
