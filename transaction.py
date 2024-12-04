@@ -41,7 +41,6 @@ try:
     # Transaction 4: Rename depot 'd1' to 'dd1'
     print("\nExecuting Transaction 4: Rename depot 'd1' to 'dd1'")
     cur.execute("UPDATE Depot SET dep_id = 'dd1' WHERE dep_id = 'd1';")
-    cur.execute("UPDATE Stock SET dep_id = 'dd1' WHERE dep_id = 'd1';")
     print("Transaction 4 completed successfully.")
 
     # Transaction 5: Add product 'p100' and its stock
