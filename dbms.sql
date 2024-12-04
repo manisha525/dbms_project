@@ -8,7 +8,7 @@ CREATE TABLE Depot(dep_id CHAR(10), addr VARCHAR(30), volume INTEGER);
 ALTER TABLE Depot ADD CONSTRAINT pk_depot PRIMARY KEY (dep_id);
 ALTER TABLE Depot ADD CONSTRAINT ck_depot_volume CHECK (volume >= 0);
 
-CREATE TABLE Stock (prod_id CHAR(10), dep_id CHAR(10), quantity INTEGER, PRIMARY KEY (prod_id, dep_id), FOREIGN KEY (prod_id) REFERENCES Product (prod_id) ON UPDATE CASCADE, FOREIGN KEY (dep_id) REFERENCES Depot (dep_id) ON UPDATE CASCADE);
+CREATE TABLE Stock (prod_id CHAR(10), dep_id CHAR(10), quantity INTEGER, PRIMARY KEY (prod_id, dep_id), FOREIGN KEY (prod_id) REFERENCES Product (prod_id) , FOREIGN KEY (dep_id) REFERENCES Depot (dep_id) ON UPDATE CASCADE);
 
 INSERT INTO Product (prod_id, pname, price) VALUES ('p1', 'Tape', 2.5), ('p2', 'TV', 250), ('p3', 'VCR', 80);
 
